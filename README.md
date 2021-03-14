@@ -2,11 +2,12 @@
 Vježbe iz predmeta Razvoj softvera 2 (2021)
 
 
-* Docker SQL image
-https://hub.docker.com/_/microsoft-mssql-server
+* Docker SQL image https://hub.docker.com/_/microsoft-mssql-server
 
+	```
 	docker pull mcr.microsoft.com/mssql/server:2017-latest
 	docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
+	```
 
 * Nugget: 
 
@@ -14,7 +15,7 @@ Micrososft.Aspnetcore.App (db, security, logging)
 
 * DB Scaffold
 
-Scaffold-DbContext 'Data Source=localhost;Initial Catalog=eProdaja;Trusted_Connection=True;' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Database
+	`Scaffold-DbContext 'Data Source=localhost;Initial Catalog=eProdaja;Trusted_Connection=True;' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Database`
 
 
 * Helpful links
