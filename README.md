@@ -9,8 +9,8 @@ Vježbe iz predmeta Razvoj softvera 2 (2021)
 	```
 
 * Nugget: 
-	-Micrososft.Aspnetcore.App (db, security, logging)
-	-AutoMapper.Extensions.Microsoft.DependencyInjection
+	- Micrososft.Aspnetcore.App (db, security, logging)
+	- AutoMapper.Extensions.Microsoft.DependencyInjection
 
 * DB Scaffold
 	```
@@ -18,8 +18,8 @@ Vježbe iz predmeta Razvoj softvera 2 (2021)
 	```
 
 * Helpful links
-	-[Git](https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/)
-	-[EF Core](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-5.0)
-	-[AutoMapper](https://code-maze.com/automapper-net-core/)
+	- [Git](https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/)
+	- [EF Core](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-5.0)
+	- [AutoMapper](https://code-maze.com/automapper-net-core/)
 
 
