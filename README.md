@@ -15,7 +15,9 @@ Micrososft.Aspnetcore.App (db, security, logging)
 
 * DB Scaffold
 
-	`Scaffold-DbContext 'Data Source=localhost;Initial Catalog=eProdaja;Trusted_Connection=True;' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Database`
+	```
+	Scaffold-DbContext 'Data Source=localhost;Initial Catalog=eProdaja;Trusted_Connection=True;' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Database
+	```
 
 
 * Helpful links
