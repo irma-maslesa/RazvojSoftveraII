@@ -2,7 +2,7 @@
 Vježbe iz predmeta Razvoj softvera 2 (2021)
 
 
-* Docker SQL image https://hub.docker.com/_/microsoft-mssql-server
+* [Docker SQL image] (https://hub.docker.com/_/microsoft-mssql-server)
 
 	```
 	docker pull mcr.microsoft.com/mssql/server:2017-latest
@@ -12,6 +12,7 @@ Vježbe iz predmeta Razvoj softvera 2 (2021)
 * Nugget: 
 
 Micrososft.Aspnetcore.App (db, security, logging)
+AutoMapper.Extensions.Microsoft.DependencyInjection
 
 * DB Scaffold
 
@@ -22,10 +23,10 @@ Micrososft.Aspnetcore.App (db, security, logging)
 
 * Helpful links
 
-	Git https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/
+	[Git] (https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/)
 
-	EF Core https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-5.0
+	[EF Core] (https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-5.0)
 
-	AutoMapper https://code-maze.com/automapper-net-core/
+	[AutoMapper] (https://code-maze.com/automapper-net-core/)
 
 
