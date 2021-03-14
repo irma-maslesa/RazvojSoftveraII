@@ -1,5 +1,4 @@
-# RazvojSoftveraII
-Vježbe iz predmeta Razvoj softvera 2 (2021)
+## Vježbe iz predmeta Razvoj softvera 2 (2021)
 
 
 * [Docker SQL image](https://hub.docker.com/_/microsoft-mssql-server)
