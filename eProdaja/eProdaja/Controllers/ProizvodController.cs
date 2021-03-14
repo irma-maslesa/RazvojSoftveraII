@@ -8,9 +8,7 @@ using System.Threading.Tasks;
 
 namespace eProdaja.Controllers
 {
-    //metatribut - omogućava serveru da zna da klasa upravlja requestima
     [ApiController]
-    //ruta - /Proizvod
     [Route("[controller]")]
     public class ProizvodController : ControllerBase
     {
@@ -44,5 +42,6 @@ namespace eProdaja.Controllers
         {
             return _proizvodService.Update(proizvod, id);
         }
+        
     }
 }
