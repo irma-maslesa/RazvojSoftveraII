@@ -10,7 +10,7 @@ Vježbe iz predmeta Razvoj softvera 2 (2021)
 
 * Nugget: 
 	- Micrososft.Aspnetcore.App (db, security, logging)
-	- AutoMapper.Extensions.Microsoft.DependencyInjection
+	- AutoMapper.Extensions.Microsoft.DependencyInjection (automapper)
 
 * DB Scaffold
 	```
