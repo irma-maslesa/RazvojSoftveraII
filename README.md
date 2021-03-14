@@ -17,7 +17,7 @@ Micrososft.Aspnetcore.App (db, security, logging)
 Scaffold-DbContext 'Data Source=localhost;Initial Catalog=eProdaja;Trusted_Connection=True;' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Database
 
 
-*Helpful links
+* Helpful links
 
 -Git
 https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/
