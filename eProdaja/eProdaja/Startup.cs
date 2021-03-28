@@ -28,6 +28,9 @@ namespace eProdaja
 
             services.AddScoped<IProizvodService, ProizvodService>();
             services.AddScoped<IKorisniciService, KorisniciService>();
+            services.AddScoped<IJediniceMjereService, JediniceMjereService>();
+            services.AddScoped<IVrsteProizvodaService, VrsteProizvodaService>();
+            services.AddScoped<IProizvodiService, ProizvodiService>();
 
             services.AddDbContext<eProdajaContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));

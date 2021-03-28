@@ -23,28 +23,12 @@ namespace eProdaja.Services
 
         public IEnumerable<Model.Korisnici> Get()
         {
-            //return _context.Korisnicis.ToList().Select(k => toModel(k)).ToList();
             return _context.Korisnicis.ToList().Select(k => _mapper.Map<Model.Korisnici>(k)).ToList();
         }
         public Model.Korisnici GetById(int id) 
         {
-            //return toModel(_context.Korisnicis.FirstOrDefault(k => k.KorisnikId == id));
             return _mapper.Map<Model.Korisnici>(_context.Korisnicis.FirstOrDefault(k => k.KorisnikId == id));
         }
-
-        /*private Model.Korisnici toModel(Korisnici enitet)
-        {
-            return new Model.Korisnici()
-            {
-                KorisnikId = enitet.KorisnikId,
-                Ime = enitet.Ime,
-                Prezime = enitet.Prezime,
-                KorisnickoIme = enitet.KorisnickoIme,
-                Email = enitet.Email,
-                Telefon = enitet.Telefon,
-                Status = enitet.Status
-            };
-        }*/
 
         public Model.Korisnici Insert(KorisniciInsertRequest request)
         {
