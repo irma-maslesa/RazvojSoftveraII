@@ -12,14 +12,12 @@ namespace eProdaja.Filters
     {
         public override void OnException(ExceptionContext context)
         {
-            //Handluje korisničke exceptione
             if (context.Exception is UserException)
             {
                 context.ModelState.AddModelError("ERROR", context.Exception.Message);
                 context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
             }
 
-            //Sakriva sistemske exceptione
             else
             {
                 context.ModelState.AddModelError("ERROR", "Greška na serveru");

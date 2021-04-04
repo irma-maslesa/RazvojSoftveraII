@@ -33,7 +33,7 @@ namespace eProdaja.Controllers
         }
 
         [HttpPost]
-        public Model.Korisnici Insert(KorisniciInsertRequest request)
+        public Model.Korisnici Insert([FromBody] KorisniciInsertRequest request)
         {
             return _korisniciService.Insert(request);
         }
