@@ -9,5 +9,9 @@ namespace eProdaja.Model
         public string Naziv { get; set; }
         public int? VrstaId { get; set; }
         public int? JedinicaMjereId { get; set; }
+
+        //bad practice
+        //public bool? IncludeJedinicaMjere { get; set; }
+        public string[] IncludeList { get; set; }
     }
 }
