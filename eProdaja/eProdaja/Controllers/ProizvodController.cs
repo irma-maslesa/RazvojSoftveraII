@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace eProdaja.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ProizvodController : ControllerBase
     {
         public IProizvodService _proizvodService { get; set; }

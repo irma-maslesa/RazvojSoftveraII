@@ -12,14 +12,16 @@ namespace eProdaja.WinUI.Korisnici
 {
     public partial class frmPrikazKorisnika : Form
     {
+        APIService _serviceKorisnici = new APIService("Korisnici");
+
         public frmPrikazKorisnika()
         {
             InitializeComponent();
         }
 
-        private void btnPrikazi_Click(object sender, EventArgs e)
+        private async void btnPrikazi_Click(object sender, EventArgs e)
         {
-
+            dgvKorisnici.DataSource = await _serviceKorisnici.Get<List<Model.Korisnici>>(new object());
         }
     }
 }

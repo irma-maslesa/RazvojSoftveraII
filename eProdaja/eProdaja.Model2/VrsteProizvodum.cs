@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 
+#nullable disable
+
 namespace eProdaja.Model
 {
-    public partial class JediniceMjere
+    public partial class VrsteProizvodum
     {
-        public int JedinicaMjereId { get; set; }
+
+        public int VrstaId { get; set; }
         public string Naziv { get; set; }
     }
 }
