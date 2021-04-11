@@ -17,13 +17,13 @@ namespace eProdaja.Model.Requests
 
         [Required(AllowEmptyStrings = false)]
         public string Email { get; set; }
-        [Required(AllowEmptyStrings = false)]
-        public string Telefon { get; set; }
 
         [Required(AllowEmptyStrings = false)]
         public string KorisnickoIme { get; set; }
         [Required(AllowEmptyStrings = false)]
-        //TO DO: [RegularExpression("")]
         public string Lozinka { get; set; }
+
+        public bool Status { get; set; }
+        public List<int> Uloge { get; set; }
     }
 }

@@ -31,5 +31,23 @@ namespace eProdaja.WinUI.Korisnici
         {
             dgvKorisnici.DataSource = await _serviceKorisnici.Get<List<Model.Korisnici>>(null);
         }
+
+        private void dgvKorisnici_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var korisnik = dgvKorisnici.SelectedRows[0].DataBoundItem as Model.Korisnici;
+
+            frmDetaljiKorisnici frm = new frmDetaljiKorisnici(korisnik);
+
+            frm.MdiParent = MdiParent;
+            frm.Show();
+        }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+            frmDetaljiKorisnici frm = new frmDetaljiKorisnici();
+
+            frm.MdiParent = MdiParent;
+            frm.Show();
+        }
     }
 }

@@ -11,12 +11,14 @@ namespace eProdaja.Mapping
         public eProdajaProfile()
         {
             CreateMap<Database.Korisnici, Model.Korisnici>().ReverseMap();
-            CreateMap<Database.JediniceMjere, Model.JediniceMjere>();
-            CreateMap<Database.VrsteProizvodum, Model.VrsteProizvodum>();
-            CreateMap<Database.Proizvodi, Model.Proizvodi>();
-            CreateMap<Model.Proizvodi, Database.Proizvodi>();
-            CreateMap<Model.Requests.ProizvodiInsertRequest, Database.Proizvodi> ();
-            CreateMap<Model.Requests.ProizvodiUpdateRequest, Database.Proizvodi>();
+            CreateMap<Database.JediniceMjere, Model.JediniceMjere>().ReverseMap();
+            CreateMap<Database.VrsteProizvodum, Model.VrsteProizvodum>().ReverseMap();
+            CreateMap<Database.Proizvodi, Model.Proizvodi>().ReverseMap();
+            CreateMap<Model.Proizvodi, Database.Proizvodi>().ReverseMap();
+            CreateMap<Model.Uloge, Database.Uloge>().ReverseMap();
+
+            CreateMap<Model.Requests.ProizvodiInsertRequest, Database.Proizvodi> ().ReverseMap();
+            CreateMap<Model.Requests.ProizvodiUpdateRequest, Database.Proizvodi>().ReverseMap();
         }
     }
 }

@@ -31,6 +31,7 @@ namespace eProdaja
             services.AddScoped<IJediniceMjereService, JediniceMjereService>();
             services.AddScoped<IVrsteProizvodaService, VrsteProizvodaService>();
             services.AddScoped<IProizvodiService, ProizvodiService>();
+            services.AddScoped<IReadService<Model.Uloge, object>, BaseReadService<Model.Uloge, Database.Uloge, object>>();
 
             services.AddDbContext<eProdajaContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));

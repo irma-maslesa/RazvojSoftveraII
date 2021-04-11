@@ -35,6 +35,7 @@ namespace eProdaja.WinUI.Korisnici
             this.label1 = new System.Windows.Forms.Label();
             this.btnPrikazi = new System.Windows.Forms.Button();
             this.txtIme = new System.Windows.Forms.TextBox();
+            this.btnDodaj = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -59,11 +60,14 @@ namespace eProdaja.WinUI.Korisnici
             this.dgvKorisnici.Location = new System.Drawing.Point(3, 16);
             this.dgvKorisnici.Name = "dgvKorisnici";
             this.dgvKorisnici.ReadOnly = true;
+            this.dgvKorisnici.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKorisnici.Size = new System.Drawing.Size(585, 201);
             this.dgvKorisnici.TabIndex = 0;
+            this.dgvKorisnici.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKorisnici_CellDoubleClick);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnDodaj);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.btnPrikazi);
             this.groupBox2.Controls.Add(this.txtIme);
@@ -85,9 +89,9 @@ namespace eProdaja.WinUI.Korisnici
             // 
             // btnPrikazi
             // 
-            this.btnPrikazi.Location = new System.Drawing.Point(386, 49);
+            this.btnPrikazi.Location = new System.Drawing.Point(291, 49);
             this.btnPrikazi.Name = "btnPrikazi";
-            this.btnPrikazi.Size = new System.Drawing.Size(196, 23);
+            this.btnPrikazi.Size = new System.Drawing.Size(141, 23);
             this.btnPrikazi.TabIndex = 1;
             this.btnPrikazi.Text = "Prikaži";
             this.btnPrikazi.UseVisualStyleBackColor = true;
@@ -97,8 +101,18 @@ namespace eProdaja.WinUI.Korisnici
             // 
             this.txtIme.Location = new System.Drawing.Point(9, 51);
             this.txtIme.Name = "txtIme";
-            this.txtIme.Size = new System.Drawing.Size(287, 20);
+            this.txtIme.Size = new System.Drawing.Size(276, 20);
             this.txtIme.TabIndex = 0;
+            // 
+            // btnDodaj
+            // 
+            this.btnDodaj.Location = new System.Drawing.Point(438, 49);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(141, 23);
+            this.btnDodaj.TabIndex = 3;
+            this.btnDodaj.Text = "Dodaj korisnika";
+            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // frmPrikazKorisnika
             // 
@@ -126,5 +140,6 @@ namespace eProdaja.WinUI.Korisnici
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPrikazi;
         private System.Windows.Forms.TextBox txtIme;
+        private System.Windows.Forms.Button btnDodaj;
     }
 }

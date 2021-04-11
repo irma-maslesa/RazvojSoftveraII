@@ -4,7 +4,7 @@ using System.Text;
 
 namespace eProdaja.Model.Requests
 {
-    public class KorisniciUpsertRequest
+    public class KorisniciUpdateRequest
     {
         public int MyProperty { get; set; }
         public string Ime { get; set; }

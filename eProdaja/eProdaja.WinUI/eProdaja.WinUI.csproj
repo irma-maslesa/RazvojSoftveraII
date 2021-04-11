@@ -69,6 +69,12 @@
     <Compile Include="frmPocetna.Designer.cs">
       <DependentUpon>frmPocetna.cs</DependentUpon>
     </Compile>
+    <Compile Include="Korisnici\frmDetaljiKorisnici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korisnici\frmDetaljiKorisnici.Designer.cs">
+      <DependentUpon>frmDetaljiKorisnici.cs</DependentUpon>
+    </Compile>
     <Compile Include="Korisnici\frmDodavanjeUredjivanjeKorisnika.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPocetna.resx">
       <DependentUpon>frmPocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korisnici\frmDetaljiKorisnici.resx">
+      <DependentUpon>frmDetaljiKorisnici.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Korisnici\frmDodavanjeUredjivanjeKorisnika.resx">
       <DependentUpon>frmDodavanjeUredjivanjeKorisnika.cs</DependentUpon>
