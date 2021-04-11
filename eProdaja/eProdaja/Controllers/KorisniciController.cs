@@ -21,9 +21,9 @@ namespace eProdaja.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Model.Korisnici> Get()
+        public IEnumerable<Model.Korisnici> Get(KorisniciSearchRequest search)
         {
-            return _korisniciService.Get();
+            return _korisniciService.Get(search);
         }
 
         [HttpGet("{id}")]

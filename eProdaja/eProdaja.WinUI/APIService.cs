@@ -49,21 +49,23 @@ namespace eProdaja.WinUI
         public async Task<T> GetById<T>(object id)
         {
             var url = $"{Properties.Settings.Default.ApiURL}/{_route}/{id}";
-
             var result = await url.GetJsonAsync<T>();
 
             return result;
         }
 
-        public async Task<T> Insert<T>()
+        public async Task<T> Insert<T>(object request)
         {
-            var result = await $"{Properties.Settings.Default.ApiURL}/{_route}".GetJsonAsync<T>();
+            var url = $"{Properties.Settings.Default.ApiURL}/{_route}";
+            var result = await url.PostJsonAsync(request).ReceiveJson<T>();
+
             return result;
         }
 
-        public async Task<T> Update<T>()
+        public async Task<T> Update<T>(object id, object request)
         {
-            var result = await $"{Properties.Settings.Default.ApiURL}/{_route}".GetJsonAsync<T>();
+            var url = $"{Properties.Settings.Default.ApiURL}/{_route}/{id}";
+            var result = await url.PutJsonAsync(request).ReceiveJson<T>();
             return result;
         }
     }

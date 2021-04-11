@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using eProdaja.Model.Requests;
 
 namespace eProdaja.WinUI.Korisnici
 {
@@ -21,7 +22,14 @@ namespace eProdaja.WinUI.Korisnici
 
         private async void btnPrikazi_Click(object sender, EventArgs e)
         {
-            dgvKorisnici.DataSource = await _serviceKorisnici.Get<List<Model.Korisnici>>(new object());
+            KorisniciSearchRequest request = new KorisniciSearchRequest() { Ime = txtIme.Text };
+
+            dgvKorisnici.DataSource = await _serviceKorisnici.Get<List<Model.Korisnici>>(request);
+        }
+
+        private async void frmPrikazKorisnika_Load (object sender, EventArgs e)
+        {
+            dgvKorisnici.DataSource = await _serviceKorisnici.Get<List<Model.Korisnici>>(null);
         }
     }
 }
