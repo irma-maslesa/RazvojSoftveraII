@@ -1,5 +1,4 @@
-﻿using eProdaja.WinUI.Korisnici;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,7 +16,7 @@ namespace eProdaja.WinUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrikazKorisnika());
+            Application.Run(new frmPocetna());
         }
     }
 }

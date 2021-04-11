@@ -1,4 +1,5 @@
 ﻿using System;
+using eProdaja.Database.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -38,40 +39,7 @@ namespace eProdaja.Database
         {
             modelBuilder.HasAnnotation("Relational:Collation", "Latin1_General_CI_AI");
 
-            modelBuilder.Entity<Dobavljaci>(entity =>
-            {
-                entity.HasKey(e => e.DobavljacId);
-
-                entity.ToTable("Dobavljaci");
-
-                entity.Property(e => e.DobavljacId).HasColumnName("DobavljacID");
-
-                entity.Property(e => e.Adresa)
-                    .IsRequired()
-                    .HasMaxLength(100);
-
-                entity.Property(e => e.Email)
-                    .IsRequired()
-                    .HasMaxLength(100);
-
-                entity.Property(e => e.Fax).HasMaxLength(25);
-
-                entity.Property(e => e.KontaktOsoba).HasMaxLength(100);
-
-                entity.Property(e => e.Napomena).HasMaxLength(500);
-
-                entity.Property(e => e.Naziv)
-                    .IsRequired()
-                    .HasMaxLength(100);
-
-                entity.Property(e => e.Telefon)
-                    .IsRequired()
-                    .HasMaxLength(25);
-
-                entity.Property(e => e.Web).HasMaxLength(100);
-
-                entity.Property(e => e.ZiroRacuni).HasMaxLength(255);
-            });
+            modelBuilder.ApplyConfiguration(new DobavljaciEntityTypeConfiguration());
 
             modelBuilder.Entity<IzlazStavke>(entity =>
             {

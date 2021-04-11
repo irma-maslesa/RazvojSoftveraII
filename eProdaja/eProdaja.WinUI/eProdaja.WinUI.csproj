@@ -63,6 +63,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APIService.cs" />
+    <Compile Include="frmPocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPocetna.Designer.cs">
+      <DependentUpon>frmPocetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnici\frmDodavanjeUredjivanjeKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korisnici\frmDodavanjeUredjivanjeKorisnika.Designer.cs">
+      <DependentUpon>frmDodavanjeUredjivanjeKorisnika.cs</DependentUpon>
+    </Compile>
     <Compile Include="Korisnici\frmPrikazKorisnika.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmPocetna.resx">
+      <DependentUpon>frmPocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korisnici\frmDodavanjeUredjivanjeKorisnika.resx">
+      <DependentUpon>frmDodavanjeUredjivanjeKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Korisnici\frmPrikazKorisnika.resx">
       <DependentUpon>frmPrikazKorisnika.cs</DependentUpon>
     </EmbeddedResource>
