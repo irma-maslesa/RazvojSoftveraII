@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace eProdaja.Controllers
 {
     //[ApiController]
-    //[Route("[controller]")]
+    //[Route("[controller/]")]
     public class JediniceMjereController : BaseReadController<Model.JediniceMjere, object>
     {
         //public IJediniceMjereService _jediniceMjereService { get; set; }

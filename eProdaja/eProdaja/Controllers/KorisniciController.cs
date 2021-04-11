@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace eProdaja.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class KorisniciController : ControllerBase
     {
         public IKorisniciService _korisniciService { get; set; }
@@ -21,9 +21,9 @@ namespace eProdaja.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Model.Korisnici> Get()
+        public IEnumerable<Model.Korisnici> Get([FromQuery]KorisniciSearchRequest search)
         {
-            return _korisniciService.Get();
+            return _korisniciService.Get(search);
         }
 
         [HttpGet("{id}")]
